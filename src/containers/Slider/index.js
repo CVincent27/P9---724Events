@@ -30,7 +30,7 @@ const Slider = () => {
     <div className="SlideCardList">
       {byDateDesc?.map((event, idx) => (
         <div
-          key={event.id}
+          key={event.id || idx}  // Utilisation de l'idx comme fallback
           className={`SlideCard SlideCard--${
             index === idx ? "display" : "hide"
           }`}
@@ -49,7 +49,7 @@ const Slider = () => {
         <div className="SlideCard__pagination">
           {byDateDesc.map((event, radioIdx) => (
             <input
-              key={event.id}
+              key={`radio-${event.id || radioIdx}`} // Utilisation de radioIdx comme fallback
               type="radio"
               name="radio-button"
               value={radioIdx}
