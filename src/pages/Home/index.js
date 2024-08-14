@@ -66,7 +66,7 @@ const Page = () => {
         <EventList />
       </section>
       <section className="PeoplesContainer" id="notre-equipe">
-        <h2 className="Title">Notre équipe</h2>
+        <h2 className="Title" data-testid="people-testid">Notre équipe</h2>
         <p>Une équipe d’experts dédiés à l’ogranisation de vos événements</p>
         <div className="ListContainer">
           <PeopleCard
@@ -123,7 +123,7 @@ const Page = () => {
         </Modal>
       </div>
     </main>
-    <footer className="row">
+    <footer className="row" data-testid='footer-testid'>
       <div className="col presta">
         <h3>Notre derniére prestation</h3>
         {
