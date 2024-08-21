@@ -143,7 +143,8 @@ const Page = () => {
                 imageSrc={last?.cover}
                 title={last?.title}
                 date={new Date(last?.date)}
-                small
+                small={false}
+                // small sur false pour correspondre à la class css
                 label={last?.type}
               />
             )}
