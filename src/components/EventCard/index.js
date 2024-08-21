@@ -44,3 +44,4 @@ EventCard.defaultProps = {
 }
 
 export default EventCard;
+
