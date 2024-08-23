@@ -19,10 +19,10 @@ const Slider = () => {
       }
   ,[index, byDateDesc]);
        
+  // Tri des data par date décroissante
   useEffect (() => 
     setByDateDesc(data?.focus.sort((evtA, evtB) => new Date(evtA.date) < new Date(evtB.date)  ? -1 : 1)
    ));
-
 
   return (
     <div className="SlideCardList">
@@ -54,7 +54,6 @@ const ContentSlider =  ({data, index}) => (
   )
 )
 )
-
 
 const Pagination = ({data, index, onchange}) => (
     data?.map((event , radioIdx) => (
