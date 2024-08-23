@@ -11,7 +11,7 @@ import Icon from "../../components/Icon";
 import Form from "../../containers/Form";
 import Modal from "../../containers/Modal";
 import ModalEvent from "../../containers/ModalEvent";
-import { useData } from "../../contexts/DataContext"; // Importer useData
+import { useData } from "../../contexts/DataContext"; // Importer data
 
 const Page = () => {
   // Récupérer les données du DataContext
